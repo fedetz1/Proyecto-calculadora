@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Calculadora</title>
+  <link rel="stylesheet" type="text/css" href="style.css" />
+</head>
+
+<body>
+  <div class="calculator">
+    <input type="text" id="display" readonly />
+    <div class="keypad">
+      <button onclick="insertarNumero(7)">7</button>
+      <button onclick="insertarNumero(8)">8</button>
+      <button onclick="insertarNumero(9)">9</button>
+      <button onclick="operadorDivision()">/</button>
+      <button onclick="insertarNumero(4)">4</button>
+      <button onclick="insertarNumero(5)">5</button>
+      <button onclick="insertarNumero(6)">6</button>
+      <button onclick="operadorMultiplicacion()">*</button>
+      <button onclick="insertarNumero(1)">1</button>
+      <button onclick="insertarNumero(2)">2</button>
+      <button onclick="insertarNumero(3)">3</button>
+      <button onclick="operadorResta()">-</button>
+      <button onclick="insertarNumero(0)">0</button>
+      <button onclick="insertarComa()">.</button>
+      <button onclick="operadorIgual()">=</button>
+      <button onclick="operadorSuma()">+</button>
+    </div>
+  </div>
+
+  <button class="reiniciar" onclick="reiniciar()">
+    Reiniciar Calculadora
+  </button>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
